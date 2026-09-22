@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#03121c">
+<title>The Urban Kite | Aerial Stories</title>
+<meta name="description" content="The Urban Kite — drone footage, aerial cinematography and visual storytelling by MD Nurul Islam.">
+<style>
+:root{--bg:#03121c;--bg2:#061b28;--card:#092334;--text:#f6f7f8;--muted:#aebbc4;--gold:#f7bd55;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 75% 0,#12334a 0,transparent 30%),linear-gradient(180deg,#03121c,#020b11 70%);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(2,12,18,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px}.brand img{width:46px;height:46px;object-fit:cover;border-radius:14px;border:1px solid rgba(247,189,85,.5)}.links{display:flex;align-items:center;gap:28px;font-size:14px}.links a:hover{color:var(--gold)}.talk{border:1px solid var(--gold);padding:9px 18px;border-radius:30px}
+.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-120px;top:70px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(247,189,85,.15),transparent 64%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}.kicker{color:var(--gold);font-size:12px;letter-spacing:5px;font-weight:800}.hero h1{font-size:clamp(52px,7vw,88px);line-height:.98;letter-spacing:-4px;margin:18px 0 22px}.accent{color:var(--gold)}.hero p{max-width:600px;color:#c3cdd3;font-size:18px}.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 20px;border:1px solid var(--line);border-radius:30px;font-weight:700}.btn.primary{background:var(--gold);color:#111;border-color:var(--gold)}
+.logo-stage{display:flex;justify-content:center;align-items:center}.logo-card{width:min(360px,80vw);padding:18px;border-radius:42px 12px 42px 12px;background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.02));border:1px solid rgba(247,189,85,.38);box-shadow:0 30px 90px rgba(0,0,0,.45);transform:rotate(2deg)}.logo-card img{width:100%;border-radius:30px 8px 30px 8px;display:block}.mini{margin-top:12px;text-align:center;color:#8498a5;font-size:12px;letter-spacing:2px}
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(6,27,40,.65)}.strip-grid{display:grid;grid-template-columns:repeat(4,1fr)}.strip-item{padding:22px;border-right:1px solid var(--line)}.strip-item:last-child{border:0}.strip-item b{display:block}.strip-item span{color:var(--muted);font-size:13px}
+section{padding:92px 0;border-bottom:1px solid var(--line)}.section-title{font-size:clamp(36px,5vw,62px);line-height:1.05;margin:12px 0 20px}.about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about p{color:var(--muted)}.portrait{min-height:390px;border-radius:30px 8px 30px 8px;border:1px solid rgba(247,189,85,.28);background:linear-gradient(135deg,#0a2c40,#07141d);position:relative;overflow:hidden}.portrait:before,.portrait:after{content:"";position:absolute;border-radius:50%;filter:blur(1px)}.portrait:before{width:260px;height:260px;right:-40px;top:40px;background:rgba(247,189,85,.12)}.portrait:after{width:300px;height:300px;left:-80px;bottom:-100px;background:rgba(33,129,180,.18)}.quote{position:absolute;left:35px;bottom:35px;font-size:30px;font-weight:800;max-width:310px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.stat{border-top:1px solid var(--line);padding-top:14px}.stat strong{color:var(--gold);display:block}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(9,35,52,.9),rgba(4,17,25,.75))}.card .num{color:var(--gold);font-size:12px}.card h3{font-size:23px;margin:18px 0 8px}.card p{color:var(--muted);font-size:14px}
+.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.social{padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025);transition:.2s}.social:hover{transform:translateY(-4px);border-color:rgba(247,189,85,.55)}.social b{display:block}.social span{font-size:12px;color:var(--muted)}
+.contact{border:1px solid rgba(247,189,85,.3);border-radius:30px;padding:42px;background:linear-gradient(120deg,rgba(247,189,85,.07),rgba(255,255,255,.02))}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.contact-item{display:flex;gap:14px;align-items:center;padding:18px;border-radius:18px;background:rgba(0,0,0,.2);border:1px solid var(--line)}.ico{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;border:1px solid rgba(247,189,85,.45);color:var(--gold);font-size:21px;flex:0 0 auto}.contact-item small{display:block;color:#81939f}.contact-item a{font-size:14px;word-break:break-word}
+footer{padding:30px 0}.footer{display:flex;justify-content:space-between;align-items:center;color:#8797a1;font-size:13px}
+@media(max-width:850px){.links{display:none}.hero{min-height:auto;padding:80px 0}.hero-grid,.about{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.logo-card{width:260px}.logo-stage{order:-1}.strip-grid{grid-template-columns:1fr 1fr}.strip-item:nth-child(2){border-right:0}.cards,.contact-grid{grid-template-columns:1fr}.socials{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.socials,.stats,.strip-grid{grid-template-columns:1fr}.strip-item{border-right:0;border-bottom:1px solid var(--line)}.contact{padding:25px}.footer{flex-direction:column;gap:8px;text-align:center}.brand span{font-size:12px}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><img src="logo.jpg" alt="The Urban Kite logo"><span>THE URBAN KITE</span></a>
+  <div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a><a class="talk" href="mailto:theurbankite@gmail.com">Let's Talk ↗</a></div>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="kicker">DRONE FOOTAGE & VISUAL STORIES</div>
+   <h1>See the World<br>from a <span class="accent">New Angle.</span></h1>
+   <p>The Urban Kite creates cinematic aerial footage, photography and visual stories from a different perspective.</p>
+   <div class="buttons">
+    <a class="btn primary" href="https://youtube.com/@theurbankite?si=uTcHedwsKhv8Wdlj" target="_blank" rel="noopener">▶ Watch Our Reel</a>
+    <a class="btn" href="#work">Explore My Work ↗</a>
+   </div>
+  </div>
+  <div class="logo-stage">
+   <div class="logo-card"><img src="logo.jpg" alt="The Urban Kite"><div class="mini">HIGHER PERSPECTIVES • BIGGER STORIES</div></div>
+  </div>
+ </div>
+</header>
+
+<div class="strip"><div class="wrap strip-grid">
+ <div class="strip-item"><b>✦ Aerial Cinematography</b><span>Stunning views from above</span></div>
+ <div class="strip-item"><b>▣ Cinematic Storytelling</b><span>Visuals that inspire</span></div>
+ <div class="strip-item"><b>◇ High Quality Content</b><span>Drone & digital footage</span></div>
+ <div class="strip-item"><b>⌖ Travel & Exploration</b><span>Discover new perspectives</span></div>
+</div></div>
+
+<section id="about">
+ <div class="wrap about">
+  <div>
+   <div class="kicker">ABOUT THE CREATOR</div>
+   <h2 class="section-title">Hi, I’m <span class="accent">MD NURUL ISLAM.</span></h2>
+   <p>I create drone footage, cinematic videos and visual stories that turn real places into memorable experiences.</p>
+   <p>Based in Bangladesh, The Urban Kite is a creative space for aerial filmmaking, photography and digital storytelling.</p>
+   <div class="stats">
+    <div class="stat"><strong>01</strong>Drone Filmmaking</div>
+    <div class="stat"><strong>02</strong>Cinematic Content</div>
+    <div class="stat"><strong>03</strong>Aerial Photography</div>
+   </div>
+  </div>
+  <div class="portrait"><div class="quote">Different angles.<br><span class="accent">Deeper stories.</span></div></div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="wrap">
+  <div class="kicker">WHAT I CREATE</div>
+  <h2 class="section-title">Aerial <span class="accent">Stories.</span></h2>
+  <div class="cards">
+   <div class="card"><span class="num">01 / FILM</span><h3>Drone Filmmaking</h3><p>Cinematic aerial footage of cities, landscapes, locations and memorable moments.</p></div>
+   <div class="card"><span class="num">02 / STORY</span><h3>Visual Storytelling</h3><p>Clean compositions and cinematic movement designed to make every place feel memorable.</p></div>
+   <div class="card"><span class="num">03 / PHOTO</span><h3>Aerial Photography</h3><p>High-quality aerial frames for social media, creative projects and digital storytelling.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="kicker">FOLLOW & CONNECT</div>
+  <h2 class="section-title">Follow The <span class="accent">Urban Kite.</span></h2>
+  <div class="socials">
+   <a class="social" target="_blank" rel="noopener" href="https://youtube.com/@theurbankite?si=uTcHedwsKhv8Wdlj"><b>▶ YouTube</b><span>Watch Videos →</span></a>
+   <a class="social" target="_blank" rel="noopener" href="https://www.facebook.com/share/1Dwoq6kQEu/"><b>f Facebook</b><span>Follow Page →</span></a>
+   <a class="social" target="_blank" rel="noopener" href="https://www.instagram.com/sunvitaskin?stkn=dGRvOHA0cmZuNHp0"><b>◎ Instagram</b><span>See Photos →</span></a>
+   <a class="social" target="_blank" rel="noopener" href="https://www.tiktok.com/@the.urban.kite?_r=1&_t=ZS-99uzWW6JXYD"><b>♪ TikTok</b><span>Watch Clips →</span></a>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap contact">
+  <div class="kicker">GET IN TOUCH</div>
+  <h2 class="section-title">Let’s Create Something <span class="accent">Amazing.</span></h2>
+  <p style="color:var(--muted)">For collaborations, projects or business inquiries, contact The Urban Kite directly.</p>
+  <div class="contact-grid">
+   <div class="contact-item"><div class="ico">☎</div><div><small>PHONE / WHATSAPP</small><a href="tel:+8801568400194">+880 1568400194</a></div></div>
+   <div class="contact-item"><div class="ico">✉</div><div><small>OFFICIAL EMAIL</small><a href="mailto:theurbankite@gmail.com">theurbankite@gmail.com</a></div></div>
+   <div class="contact-item"><div class="ico">✉</div><div><small>PERSONAL EMAIL</small><a href="mailto:nurul16122k@gmail.com">nurul16122k@gmail.com</a></div></div>
+  </div>
+ </div>
+</section>
+
+<footer><div class="wrap footer"><div>THE URBAN KITE — AERIAL STORIES</div><div>© 2026 The Urban Kite. All rights reserved.</div></div></footer>
+</body>
+</html>
